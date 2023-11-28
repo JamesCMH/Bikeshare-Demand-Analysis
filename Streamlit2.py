@@ -67,7 +67,10 @@ This application is designed to assist the Washington D.C. administration in com
     Sebastian Perez<br>
     Yu Shi
     """
-       
+    def display_details():
+        st.markdown(multi, unsafe_allow_html=True)
+    with st.expander("Group 2 Team Members"):
+        display_details()   
 
 
 def eda_page(data):

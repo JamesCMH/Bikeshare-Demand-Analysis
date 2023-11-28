@@ -68,14 +68,6 @@ This application is designed to assist the Washington D.C. administration in com
     Yu Shi
     """
        
-    def display_details():
-        st.markdown(multi, unsafe_allow_html=True)
-        col1, col2, col3 = st.columns([1,2,1])
-
-        with col2:
-            st.image('Group2.jpeg', width=700)
-    with st.expander("Group 2 Team Members"):
-        display_details()
 
 
 def eda_page(data):

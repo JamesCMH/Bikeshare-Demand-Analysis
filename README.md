@@ -1,6 +1,3 @@
-# Bikeshare-Demand-Analysis
-Python for Data Analysis Project
-
 # Washington D.C. Bike-Sharing Analysis and Predictor Model
 
 # Project Overview:

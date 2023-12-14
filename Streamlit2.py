@@ -709,27 +709,28 @@ There is a more pronounced evening peak compared to the morning, indicating a po
 # Display the scatter plot
     fig = create_scatter_plot(data, x_var, y_var)
     st.plotly_chart(fig, use_container_width=True)
-# Function to plot the correlation matrix heatmap
-    def plot_correlation_heatmap(df, columns):
-        plt.figure(figsize=(15, 15))
-        sns.heatmap(data=df[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
-        st.pyplot(plt)
+# def plot_correlation_heatmap(df, columns):
+    plt.figure(figsize=(15, 15))
+    sns.heatmap(data=df[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
+    st.pyplot(plt)
 
-    st.header('Correlation Matrix')
-    
-    st.write("features = ['season', 'mnth', 'holiday', 'weekday', 'workingday','weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']")
+st.header('Correlation Matrix')
 
-    selected_columns = st.multiselect(
-        'Select columns for the correlation matrix:',
-        options=data.columns.tolist(),
-        default=data.columns.tolist()
-    )
+features = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']
+
+st.write("Selected features:", features)
+
+selected_columns = st.multiselect(
+    'Select columns for the correlation matrix:',
+    options=data.columns.tolist(),
+    default=data.columns.tolist()
+)
 
 # Plot the correlation matrix heatmap with the selected columns
-    if selected_columns:
-        plot_correlation_heatmap(data, selected_columns)
-    else:
-        st.warning('Please select at least one column to display the correlation matrix.')
+if selected_columns:
+    plot_correlation_heatmap(data, selected_columns)
+else:
+    st.warning('Please select at least one column to display the correlation matrix.')
        
         
 def pred_page():

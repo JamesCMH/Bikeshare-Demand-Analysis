@@ -716,8 +716,8 @@ There is a more pronounced evening peak compared to the morning, indicating a po
         st.pyplot(plt)
 
     st.header('Correlation Matrix')
-	columns = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']
-	plot_correlation_heatmap(data, columns)
+    columns = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']
+    plot_correlation_heatmap(data, columns)
 
 
         

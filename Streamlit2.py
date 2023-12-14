@@ -56,21 +56,7 @@ This application is designed to assist the Washington D.C. administration in com
 
 </div>
 """, unsafe_allow_html=True)
-    
-    multi = """<div style='margin-top: 20px;'>
-    <div style='text-align: center; font-size: 20px;'>
-    Team Members:<br>
-    Sarah Awad<br>
-    Alejandro Danus<br>
-    Lucas Gonzalez Gago<br>
-    Mary Ann Mousa<br>
-    Sebastian Perez<br>
-    Yu Shi
-    """
-    def display_details():
-        st.markdown(multi, unsafe_allow_html=True)
-    with st.expander("Group 2 Team Members"):
-        display_details()   
+   
 
 
 def eda_page(data):

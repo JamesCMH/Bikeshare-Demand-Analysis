@@ -50,10 +50,7 @@ This application is designed to assist the Washington D.C. administration in com
     Predictive Modeling<br>
     <div style='margin-top: 20px;'>
     <div style='margin-top: 20px;'>
-    
-<div style='margin-top: 20px;'>
-<div style='text-align: center; font-size: 20px;'>
-
+  
 </div>
 """, unsafe_allow_html=True)
    

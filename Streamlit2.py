@@ -712,7 +712,7 @@ There is a more pronounced evening peak compared to the morning, indicating a po
 
     def plot_correlation_heatmap(df, columns):
         plt.figure(figsize=(15, 15))
-        sns.heatmap(data=df[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
+        sns.heatmap(data=data[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
         st.pyplot(plt)
 
     st.header('Correlation Matrix')

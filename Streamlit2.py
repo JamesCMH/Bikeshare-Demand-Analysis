@@ -710,16 +710,6 @@ There is a more pronounced evening peak compared to the morning, indicating a po
     fig = create_scatter_plot(data, x_var, y_var)
     st.plotly_chart(fig, use_container_width=True)
 
-    def plot_correlation_heatmap(df, columns):
-        plt.figure(figsize=(15, 15))
-        sns.heatmap(data=df[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
-        st.pyplot(plt)
-
-    st.header('Correlation Matrix')
-    columns = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']
-    plot_correlation_heatmap(data, columns)
-
-
         
 def pred_page():
     st.header("Bike Rental Prediction Model")

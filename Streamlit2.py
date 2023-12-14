@@ -712,25 +712,14 @@ There is a more pronounced evening peak compared to the morning, indicating a po
 
     def plot_correlation_heatmap(df, columns):
         plt.figure(figsize=(15, 15))
-        sns.heatmap(data=data[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
+        sns.heatmap(data=df[columns].corr(), annot=True, fmt=".2f", cmap='coolwarm')
         st.pyplot(plt)
 
     st.header('Correlation Matrix')
-    
-    st.write("features = ['season', 'mnth', 'holiday', 'weekday', 'workingday','weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']")
+	columns = ['season', 'mnth', 'holiday', 'weekday', 'workingday', 'weathersit', 'temp', 'hum', 'daylight_hours', 'hr_sin', 'hr_cos']
+	plot_correlation_heatmap(data, columns)
 
-    selected_columns = st.multiselect(
-        'Select columns for the correlation matrix:',
-        options=data.columns.tolist(),
-        default=data.columns.tolist()
-    )
 
-# Plot the correlation matrix heatmap with the selected columns
-    if selected_columns:
-        plot_correlation_heatmap(data, selected_columns)
-    else:
-        st.warning('Please select at least one column to display the correlation matrix.')
-       
         
 def pred_page():
     st.header("Bike Rental Prediction Model")

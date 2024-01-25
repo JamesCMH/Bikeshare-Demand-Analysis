@@ -803,7 +803,7 @@ Future Data Preparation:
     
     st.image('ModelsMAPE.jpeg', caption='Results', width=400)
     
-    st.subheader("XGBoost Regressive Model")
+    st.subheader("XGBoost Regression Model")
     st.markdown("""
     <style>
     .big-font {
@@ -885,7 +885,7 @@ Future Data Preparation:
         st.error("Please enter valid numeric values for y_future.")
         
         
-    st.subheader("Random Forest Regressive Model")
+    st.subheader("Random Forest Regression Model")
     st.markdown("""
     <style>
     .big-font {

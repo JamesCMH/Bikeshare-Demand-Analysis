@@ -695,7 +695,6 @@ There is a more pronounced evening peak compared to the morning, indicating a po
 
         
 def pred_page():
-    st.header("Bike Rental Prediction Model")
     model = joblib.load('best_model_xgb_2.joblib')
     with open('weekday_encoding.json', 'r') as json_file:
         weekday_encoding = json.load(json_file)

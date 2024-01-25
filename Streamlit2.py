@@ -142,7 +142,7 @@ Continuous Variables: The temp variable appears to be continuous, with a range f
         st.markdown("""<div style='margin-top: 30px;'>""", unsafe_allow_html=True)
 
     with col3:
-        st. markdown("""<div style='text-align: left; font-size: 20px;'> Total Casula Users </div>
+        st. markdown("""<div style='text-align: left; font-size: 20px;'> Total Casual Users </div>
 """, unsafe_allow_html=True)
         st.subheader("620,017")
         st.markdown("""<div style='margin-top: 30px;'>""", unsafe_allow_html=True)
